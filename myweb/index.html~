@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>GrayScale</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/java.js" ></script>
+	<meta name="keywords" content="HTML," />
+	<meta name="description" content="" />
+	<meta name="revised" content="SMLCustoms, 2/11/2016" />
+	<meta http-equiv="refresh" content="" />
+	
+</head>
+<body>
+<div class ="navbar" align="center">
+
+<a href="file:///home/silver/Desktop/myweb/index.html">Home </a>
+<a href="">Services </a>
+<a href="#">About Us </a>
+<a href="file:///home/silver/Desktop/myweb/regform.html">Sign-up </a>
+<a href="file:///home/silver/Desktop/myweb/cu.html">Contact Us </a>
+</div>
+<table border="1" align="center">
+<tbody>
+
+<tr class="pbody">
+<td class="dbody">
+</td>
+
+<!-- right side -->
+<td class="sidelinks" hight="200" width="150">
+<li><a href="">gfg</a></li>
+<li><a href="">fdf</a></li>
+<li><a href="">faceboo</a></li>
+<li><a href="" target="_self">hackaday</a></li>
+</td>
+
+</body>
+</html>
