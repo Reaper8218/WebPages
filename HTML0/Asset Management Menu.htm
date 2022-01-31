@@ -1,0 +1,377 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Asset Management Menu</title>
+<style>
+h1,h2,h3,h4,h6{
+	color:#005dab;
+	background:#FFFFFF;
+}
+h5 
+{ 
+	background-color: #888888; 
+	padding:5px;
+	color:#FFFFFF;
+}
+a:link {
+	text-decoration:underline;
+	color: #005dab;	
+}
+a:visited {
+	text-decoration:underline;
+	color: #005dab;
+}
+a:hover {
+	text-decoration:none;
+	color: #005dab;
+}
+li { 
+	list-style-type: disc ;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	color: #000;
+	--background: #efefef url(http://localhost/wms//includes/gray_jean.png);
+	background:#FFFFFF
+	font-weight:bold;
+	font-family: arial;
+	margin: 0px auto;
+	padding: 0px;
+	text-align: JUSTIFY;
+}
+#header {
+	background: none;
+	font: italic normal 230% 'Times New Roman', Times, serif;
+	margin: 0;
+	background:#000000;
+	
+	
+}
+#header_title {
+	text-align: center;
+	vertical-align:text-top;
+	height: 20px;
+	font-size: 40px;
+	background:#000000;
+}
+#header_title img{
+	height:	50px;
+}
+/*Tab Css */
+ul#tabnav { /* general settings */
+	text-align: center; /* set to left, right or center */
+	margin: 0 0 1em 0; /* set margins as desired */
+	font: normal 11px verdana, arial, sans-serif; /* set font as desired */
+	list-style-type: none;
+	padding: 3px 10px 3px 10px; /* THIRD number must change with respect to padding-top (X) below */
+	border: 1px solid #ccc;
+	background: #fff;
+	--background: -moz-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(224,224,224,1) 100%);
+	--background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(224,224,224,1)));
+	--background: -webkit-linear-gradient(top, rgba(252,252,252,1) 0%,rgba(224,224,224,1) 100%);
+	--background: -o-linear-gradient(top, rgba(252,252,252,1) 0%,rgba(224,224,224,1) 100%);
+	--background: linear-gradient(top, rgba(252,252,252,1) 0%,rgba(224,224,224,1) 100%);
+
+	--background: -moz-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(224,224,224,1) 100%);
+	--background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(224,224,224,1)));
+	--background: -webkit-linear-gradient(top, rgba(252,252,252,1) 0%,rgba(224,224,224,1) 100%);
+	--background: -o-linear-gradient(top, rgba(252,252,252,1) 0%,rgba(224,224,224,1) 100%);
+	--background: linear-gradient(top, rgba(252,252,252,1) 0%,rgba(224,224,224,1) 100%);
+	
+	background: -webkit-linear-gradient(45deg, #000000, #818181, #ffffff);
+	background: -moz-linear-gradient(45deg, #000000, #818181, #ffffff);
+	background: -o-linear-gradient(45deg, #000000, #818181, #ffffff);
+	background: linear-gradient(45deg, #000000, #818181, #ffffff);
+	
+	z-index: 600;
+}
+
+ul#tabnav li { /* do not change */
+	display: inline;
+}
+
+
+ul#tabnav li  { /* settings for all tab links Top button links*/
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	list-style-type: none;
+	display: inline-block;
+	position: center;
+	zoom: 1;
+	line-height: inherit;
+	top: 0;
+	left: 0;
+	font-size: 16px;
+}
+ul#tabnav li a{
+	text-shadow: 0px 1px 1px #fff;
+	padding: 10px 15px;
+	text-decoration: none;
+	font-size: 0.9em;
+	--color: #777;
+	color:#FFFFFF;	
+}
+
+ul#tabnav a:hover { /* settings for hover effect */
+}
+/*End of Tabs */
+
+/*Body */
+#content {
+	
+
+}
+/*End of Body */
+
+/*Main Nav */
+table.nav
+{ 
+	font-weight: normal;
+	width: auto;
+	margin-left:auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	border-spacing: 0px;}
+
+
+.navHd
+{ 
+	--border-bottom: 2px solid #005dab;
+	text-align: left;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 18px;
+	color: #0099FF;
+	padding-left:10px;
+	background:#585858 ;
+}
+
+.bod 
+{ 
+	text-align: center;
+	font-family: Verdana, sans-serif, Arial;
+	font-weight: italic;
+	font-size: 14px;
+	line-height: 17px;
+	text-indent: -8px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 10px;
+	color:#005dab;
+}
+
+.navBod 
+{ 
+	text-align: center;
+	font-family: Verdana, sans-serif, Arial;
+	font-weight: italic;
+	font-size: 14px;
+	line-height: 17px;
+	color: #ffffff;
+	border: 2px solid #000000;
+	--text-indent: -8px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	vertical-align: text-top;
+	--padding-left: 10px;
+}
+/*End Main Nav */
+/*Forms */
+#forms {
+	background: #fff;
+	border: 1px solid #5F9F9F;
+	width:500px;
+	padding-left: 10px;
+
+}
+/*End of Forms*/
+#frame {
+   
+	text-align: left;
+	border: 1px solid #000000;
+	margin-left:5%;
+	margin-right:5%;
+}
+.z-table{
+		
+}
+
+.z-table th{
+	font-weight:bold;
+	background-color: #888888 !important;
+	border: solid 1px #fff;
+}
+
+.z-table th, .ztable td {
+	padding: 7px 10px;
+	font-size: 0.9em;
+	border-bottom: 1px dotted #ddd;
+	text-align: left;
+}
+
+.z-table tr:nth-child(1n+1){
+	background-color:#fff;	
+}
+
+.z-table tr:nth-child(2n+1)
+{
+	--background-color:#f5f5f5;	
+	background: #efefef url(http://localhost/wms//includes/gray_jean.png);
+}
+
+
+#sorttable_sortfwdind,#sorttable_sortrevind{
+display:none;	
+}
+</style>
+
+
+
+</head>
+
+<body id="Asset Management">
+<div id="header">
+	<h1 id="header_title">ESCO</h1>	<ul id="tabnav">
+	<li class="receiving"><a href="http://esco.nwatechnology.com/wms/am/am.php">Asset Management</a></li>
+	<li class="receiving"><a href="http://esco.nwatechnology.com/wms/receiving/rec.php">Receiving</a></li>
+	<li class="inventory"><a href="http://esco.nwatechnology.com/wms/inventory/inv.php">Inventory</a></li>
+	<li class="ship"><a href="http://esco.nwatechnology.com/wms/shipping/ship.php">Shipping</a></li>
+	<li class="ship"><a href="http://esco.nwatechnology.com/wms/reporting/reports.php">Reports</a></li>
+	<li class="stage"><a href="http://esco.nwatechnology.com/wms/invoice/invoice.php">Invoice</a></li>
+	<li class="logout"><a href="http://esco.nwatechnology.com/wms/logout.php">Log Out</a></li>
+</ul></div>
+		
+
+
+<div id="content">
+<table class="nav">
+<tbody><tr>
+<td class="navBod">
+						<h5>Trailer Upload View</h5>
+							 <a href="http://esco.nwatechnology.com/wms/am/trailer_header_view.php"><li class="bod">Bol/Trailer View</li></a>
+					
+						<h5>Pallet View</h5>
+							 <a href="http://esco.nwatechnology.com/wms/am/scanning_grid_view.php"><li class="bod">Scanning Grid View</li></a>
+			 <a href="http://esco.nwatechnology.com/wms/am/job_status_grid.php"><li class="bod">Job Status Grid</li></a>
+			 <a href="http://esco.nwatechnology.com/wms/am/customer_job_tool_grid.php"><li class="bod">Customer Job Tool Grid</li></a>
+				
+		
+				<h5>Receiving Form</h5>
+			 <a href="http://esco.nwatechnology.com/wms/am/receiving_form.php"><li class="bod">Receiving Form</li></a>
+			 <br>
+			 <a href="http://esco.nwatechnology.com/wms/am/receiving_form_po.php"><li class="bod">Receiving Form PO Receipts</li></a>
+	
+</td>
+<td class="navBod">
+	<h5>Processing Assets</h5>
+		 <a href="http://esco.nwatechnology.com/wms/am/y_scan_login.php?scan_gun=no"><li class="bod">Scrap Audit Screen</li></a>
+		 <a href="http://esco.nwatechnology.com/wms/am/y_scan_login.php?scan_gun=yes"><li class="bod">Scrap Audit Scan Gun</li></a>
+		 <a href="http://esco.nwatechnology.com/wms/am/y_scan_login.php?scan_gun=no"><li class="bod">Asset Audit</li></a>
+	<h5>Processing Commodity</h5>
+		 <a href="http://esco.nwatechnology.com/wms/am/z_scan_login.php"><li class="bod">Commodity Audit</li></a>
+		 <a href="http://esco.nwatechnology.com/wms/am/s_scan_login.php"><li class="bod">Steel Audit</li></a>
+		 <a href="http://esco.nwatechnology.com/wms/am/generate_commodity_tare_tag.php" target="_BLANK"><li class="bod">Generate Commodity Tare Tag</li></a>
+		 <a href="http://esco.nwatechnology.com/wms/am/view_commodity_tare_tag.php"><li class="bod">View Commodity Tare Tag</li></a>
+	
+	<h5>Move Asset/SN</h5>
+		 <a href="http://esco.nwatechnology.com/wms/am/m_asset_location.php"><li class="bod">Move Asset # To Location</li></a>
+		 <a href="http://esco.nwatechnology.com/wms/am/m_sn_location.php"><li class="bod">Move S/N To Location</li></a>
+	<h5>Move Pallet</h5>
+		 <a href="http://esco.nwatechnology.com/wms/am/move_pallet_location.php"><li class="bod">Move Pallet Location</li></a>
+		<!---	 <a href="../am/y_scan_pallet_sn.php"><li class="bod">Move S/N To Pallet</li></a> -->
+			<!---	 <a href="../am/y_scan_pallet_asset.php"><li class="bod">Move Asset # To Pallet</li></a> -->
+	<!---
+			 <a href="../am/pallet_item_move.php"><li class="bod">Move S/N Location</li></a>
+	-->
+		 <a href="http://esco.nwatechnology.com/wms/am/y_scan_weight.php"><li class="bod">Scan Pallet Weight</li></a>
+		 <a href="http://esco.nwatechnology.com/wms/am/y_scan_weight_location.php"><li class="bod">Scan Pallet Weight/Location</li></a>
+	
+	
+</td>
+<td class="navBod">
+
+	<h5>Inventory</h5>
+	<!---
+					 <a href="../am/pallet_scan_header_view.php"><li class="bod">xx</li></a>
+				-->
+			 <a href="http://esco.nwatechnology.com/wms/am/inventory_grid_bol.php"><li class="bod">Inventory Grid View (BOL Rollup)</li></a>
+		 <a href="http://esco.nwatechnology.com/wms/am/inventory_grid.php?status_select=active"><li class="bod">Inventory Grid View (Active)</li></a>
+		 <a href="http://esco.nwatechnology.com/wms/am/inventory_grid.php?status_select=received"><li class="bod">Inventory Grid View (Received)</li></a>
+		 <a href="http://esco.nwatechnology.com/wms/am/inventory_grid.php?status_select=complete"><li class="bod">Inventory Grid View (Complete)</li></a>
+		 <a href="http://esco.nwatechnology.com/wms/am/inventory_grid.php?status_select=closed"><li class="bod">Inventory Grid View (Closed)</li></a>
+		 <a href="http://esco.nwatechnology.com/wms/am/inventory_grid.php?status_select=history"><li class="bod">Inventory Grid View (History/ALL)</li></a>
+		
+	
+			 <a href="http://esco.nwatechnology.com/wms/am/available_inventory_on_hand.php"><li class="bod">Available Inventory On Hand</li></a>
+				 <a href="http://esco.nwatechnology.com/wms/am/inventory_grid_computer.php"><li class="bod">Inventory Computers</li></a>
+				 <a href="http://esco.nwatechnology.com/wms/am/inventory_grid_lcd.php"><li class="bod">Inventory LCD</li></a>
+	
+					 <a href="http://esco.nwatechnology.com/wms/am/scanning_grid_view_all.php"><li class="bod">Search All Assets</li></a>
+				
+			 <a href="http://esco.nwatechnology.com/wms/am/search_utility_grid.php"><li class="bod">Time Line Grid View</li></a>
+		<h5>Reports</h5>
+			 <a href="http://esco.nwatechnology.com/wms/am/daily_audit_report.php"><li class="bod">Daily Audit Report</li></a>
+		 <a href="http://esco.nwatechnology.com/wms/am/commodity_inventory_onhand.php"><li class="bod">Available Commodity Inventory On Hand</li></a>
+		 <br>
+		 <a href="http://esco.nwatechnology.com/wms/am/report_by_bol.php"><li class="bod">Time Tracker Bol Report</li></a>
+		 <a href="http://esco.nwatechnology.com/wms/am/report_by_project.php"><li class="bod">Time Tracker Project Report</li></a>
+		 <a href="http://esco.nwatechnology.com/wms/am/report_by_customer.php"><li class="bod">Time Tracker Customer Report</li></a><br>
+	
+</td>
+	<td class="navBod">
+			<h5>Labels</h5>
+				   <a href="http://esco.nwatechnology.com/wms/receiving/rec_lab_form2.php"></a><li class="bod"><a href="http://esco.nwatechnology.com/wms/receiving/rec_lab_form2.php">Reprint Pallet Label</a></li>
+				   <a href="http://esco.nwatechnology.com/wms/receiving/lab_cid_form.php"></a><li class="bod"><a href="http://esco.nwatechnology.com/wms/receiving/lab_cid_form.php">Pallet CID Label</a></li>
+		
+			<h5>Reports</h5>
+				 <a href="http://esco.nwatechnology.com/wms/receiving/rec_pallet_scan_reports.php"><li class="bod">Pallet Scan Reports</li></a>
+				 <a href="http://esco.nwatechnology.com/wms/receiving/rec_pallet_scan_statistics.php"><li class="bod">Pallet Scan Statistics View</li></a>
+				<h5>Utility</h5>
+				 <a href="http://esco.nwatechnology.com/wms/receiving/rec_pallet_scan_excel_report.php"><li class="bod">REF/NEW POS export to excel</li></a>
+				<h5>Invoice</h5>
+				 <a href="http://esco.nwatechnology.com/wms/am/invoice_generate_search.php"><li class="bod">Invoice Search/Allocation</li></a>
+				 <a href="http://esco.nwatechnology.com/wms/am/sales_order_grid.php"><li class="bod">Sales Order Grid</li></a>
+	       <h5>Customer</h5> 
+       <a href="http://esco.nwatechnology.com/wms/am/crm_cus_mas_view.php"></a><li class="bod"><a href="http://esco.nwatechnology.com/wms/am/crm_cus_mas_view.php">Customers View</a></li>
+       <h5>Time Tracking</h5> 
+       <a href="http://esco.nwatechnology.com/wms/am/time_tracker_grid.php"></a><li class="bod"><a href="http://esco.nwatechnology.com/wms/am/time_tracker_grid.php">Project Time Tracker</a></li>
+		<a href="http://esco.nwatechnology.com/wms/am/report_by_customer.php"><li class="bod">Time by Customer</li></a>
+		<a href="http://esco.nwatechnology.com/wms/am/time_tracker_area_report.php"><li class="bod">Time by Area</li></a>
+		<a href="http://esco.nwatechnology.com/wms/am/z_scan_pallet_time.php"><li class="bod">Scan (Time)</li></a>
+<br>
+
+		
+				<!---
+		 <a href="../am/invoice_grid1.php"><li class="bod">Invoice Grid 1</li></a>
+		 -->
+				<!---
+		 <a href="../am/invoice_grid2.php"><li class="bod">Invoice Grid 2</li></a>
+		 -->
+	</td>
+</tr>
+</tbody></table>
+</div>	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<!--  <tr><td><hr align="center" width="100%" size="1" color="#999999"></td></tr> -->
+  <tbody><tr>
+    <td align="center">
+<!---
+      <font size="1" face="verdana" color="#000000"><b>Copyright &copy 2006 4Elements, Inc. | All Rights Reserved.</b></font><br>
+      <font size="1" face="verdana" color="#000000">1002 S.W. West Park Drive Suite 4</font><br>
+      <font size="1" face="verdana" color="#000000">Bentonville, AR 72712, USA</font><br>
+      <font size="1" face="verdana" color="#000000">For site use or general information call (888) 616-0443 Ext: 226</font><br>
+      <font size="1" face="verdana" color="#000000">All trademarks herein belong to their respective owners.</font><br>
+-->
+	</td>
+  </tr>
+</tbody></table>
+
+
+
+</body><style type="text/css"></style></html>
